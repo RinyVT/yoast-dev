@@ -1,0 +1,14 @@
+/extensions/*
+!/extensions/sitepackage
+
+/public/v9/*
+!/public/v9/config
+!/public/v9/composer.json
+
+/public/v10/*
+!/public/v10/config
+!/public/v10/composer.json
+
+/public/v11/*
+!/public/v11/config
+!/public/v11/composer.json

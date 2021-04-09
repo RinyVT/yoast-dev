@@ -1,0 +1,28 @@
+{
+  "name": "rinyvt/yoast-dev-v11",
+  "description": "CMS11 installation for Yoast Development",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../../extensions/*"
+    }
+  ],
+  "require": {
+    "t3/cms": "^11.0",
+    "rinyvt/sitepackage": "@dev",
+    "yoast-seo-for-typo3/yoast_seo": "dev-master as 8.0.0",
+    "yoast-seo-for-typo3/yoast_seo_premium": "@dev",
+    "doctrine/dbal": "2.12.1"
+  },
+  "scripts": {
+    "typo3-cms-scripts": [
+      "typo3cms install:generatepackagestates",
+      "typo3cms install:fixfolderstructure"
+    ],
+    "post-autoload-dump": [
+      "@typo3-cms-scripts"
+    ]
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}

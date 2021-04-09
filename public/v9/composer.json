@@ -1,0 +1,27 @@
+{
+  "name": "rinyvt/yoast-dev-v9",
+  "description": "CMS9 installation for Yoast Development",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../../extensions/*"
+    }
+  ],
+  "require": {
+    "t3/cms": "^9.5",
+    "rinyvt/sitepackage": "@dev",
+    "yoast-seo-for-typo3/yoast_seo": "dev-master as 8.0.0",
+    "yoast-seo-for-typo3/yoast_seo_premium": "@dev"
+  },
+  "scripts": {
+    "typo3-cms-scripts": [
+      "typo3cms install:generatepackagestates",
+      "typo3cms install:fixfolderstructure"
+    ],
+    "post-autoload-dump": [
+      "@typo3-cms-scripts"
+    ]
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
