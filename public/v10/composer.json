@@ -9,6 +9,7 @@
   ],
   "require": {
     "t3/cms": "^10.4",
+    "typo3/cms-reports": "^10.4",
     "rinyvt/sitepackage": "@dev",
     "yoast-seo-for-typo3/yoast_seo": "dev-master as 8.0.0",
     "yoast-seo-for-typo3/yoast_seo_premium": "@dev"
