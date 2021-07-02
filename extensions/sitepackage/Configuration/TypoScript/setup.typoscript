@@ -1,7 +1,6 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+
 page = PAGE
 page {
-    10 = TEXT
-    10.value (
-        Hello world
-    )
+    10  < styles.content.get
 }
