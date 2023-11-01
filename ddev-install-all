@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd php7 && ddev install-all
+cd php8 && ddev install-all

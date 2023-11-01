@@ -1,0 +1,32 @@
+name: yoast-php8
+type: php
+docroot: public
+php_version: "8.1"
+webserver_type: apache-fpm
+router_http_port: "80"
+router_https_port: "443"
+xdebug_enabled: false
+additional_hostnames:
+  - v11.yoast-php8
+  - v12.yoast-php8
+additional_fqdns: []
+mariadb_version: "10.3"
+mysql_version: ""
+nfs_mount_enabled: false
+mutagen_enabled: false
+use_dns_when_possible: true
+composer_version: "2"
+omit_containers: [dba]
+web_environment:
+  - TYPO3_CONTEXT=Development
+  - TYPO3_INSTALL_DB_DRIVER=mysqli
+  - TYPO3_INSTALL_DB_USER=root
+  - TYPO3_INSTALL_DB_PASSWORD=root
+  - TYPO3_INSTALL_DB_HOST=db
+  - TYPO3_INSTALL_DB_PORT=3306
+  - TYPO3_INSTALL_DB_UNIX_SOCKET=
+  - TYPO3_INSTALL_DB_USE_EXISTING=0
+  - TYPO3_INSTALL_ADMIN_USER=admin
+  - TYPO3_INSTALL_ADMIN_PASSWORD=password
+  - TYPO3_INSTALL_SITE_NAME=PHP8 Yoast Dev environment
+  - TYPO3_INSTALL_WEB_SERVER_CONFIG=apache

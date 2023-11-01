@@ -1,6 +1,6 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Sitepackage',
+    'title' => 'Records test',
     'description' => '',
     'state' => 'stable',
     'version' => '1.0.0',

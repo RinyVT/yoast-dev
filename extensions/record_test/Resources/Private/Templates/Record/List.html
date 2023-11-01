@@ -1,0 +1,10 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+
+<ul>
+	<f:for each="{records}" as="record">
+		<li><f:link.action action="detail" arguments="{record: record}">{record.title}</f:link.action></li>
+	</f:for>
+</ul>
+
+</html>

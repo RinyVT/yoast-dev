@@ -1,0 +1,15 @@
+// This should be placed into page resources for now because of conflicting pids
+TCEMAIN.preview {
+    tx_recordtest_record {
+        previewPageId = PAGEID
+        useCacheHash = 1
+        useDefaultLanguageRecord = 0
+        fieldToParameterMap {
+            uid = tx_recordtest_pi1[record]
+        }
+        additionalGetParameters {
+            tx_recordtest_pi1.controller = Record
+            tx_recordtest_pi1.action = detail
+        }
+    }
+}

@@ -1,6 +1,16 @@
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+
+config {
+    #admPanel = 1
+    pageTitleProviders {
+        news >
+    }
+}
 
 page = PAGE
 page {
+    typeNum = 0
     10  < styles.content.get
+    stdWrap.dataWrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
 }

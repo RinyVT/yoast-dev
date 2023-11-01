@@ -1,0 +1,48 @@
+{
+  "name": "rinyvt/yoast-dev-php8-12",
+  "description": "PHP8 CMS12 installation for Yoast Development",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../extensions/*",
+      "canonical": true
+    }
+  ],
+  "require": {
+    "typo3/cms-belog": "^12.0",
+    "typo3/cms-beuser": "^12.0",
+    "typo3/cms-backend": "^12.0",
+    "typo3/cms-core": "^12.0",
+    "typo3/cms-extbase": "^12.0",
+    "typo3/cms-extensionmanager": "^12.0",
+    "typo3/cms-filelist": "^12.0",
+    "typo3/cms-fluid": "^12.0",
+    "typo3/cms-fluid-styled-content": "^12.0",
+    "typo3/cms-frontend": "^12.0",
+    "typo3/cms-info": "^12.0",
+    "typo3/cms-install": "^12.0",
+    "typo3/cms-linkvalidator": "^12.0",
+    "typo3/cms-lowlevel": "^12.0",
+    "typo3/cms-reports": "^12.0",
+    "typo3/cms-rte-ckeditor": "^12.0",
+    "typo3/cms-scheduler": "^12.0",
+    "typo3/cms-setup": "^12.0",
+    "typo3/cms-tstemplate": "^12.0",
+
+    "typo3/cms-cli": "^3.0",
+    "yoast-seo-for-typo3/yoast_seo": "@dev",
+    "rinyvt/sitepackage": "@dev",
+    "rinyvt/record-test": "@dev",
+    "typo3/cms-dashboard": "^12.4",
+    "derhansen/sf_event_mgt": "^7.3",
+    "typo3/cms-adminpanel": "^12.4"
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  }
+}

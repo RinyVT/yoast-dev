@@ -1,0 +1,28 @@
+base: 'https://v11.yoast-php7.ddev.site'
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    navigationTitle: English
+    hreflang: en-us
+    direction: ltr
+    flag: us
+  -
+    title: Dutch
+    enabled: true
+    languageId: 1
+    base: /nl/
+    typo3Language: nl
+    locale: nl_NL.UTF-8
+    iso-639-1: nl
+    navigationTitle: Dutch
+    hreflang: nl-NL
+    direction: ltr
+    flag: nl
+rootPageId: 1
+websiteTitle: ''

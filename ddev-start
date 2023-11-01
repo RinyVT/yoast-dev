@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd php7 && ddev start
+cd php8 && ddev start

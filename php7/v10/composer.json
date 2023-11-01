@@ -1,0 +1,37 @@
+{
+  "name": "rinyvt/yoast-dev-php7-10",
+  "description": "PHP7 CMS10 installation for Yoast Development",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../extensions/*"
+    }
+  ],
+  "require": {
+    "t3/cms": "^10.4",
+    "typo3/cms-reports": "^10.4",
+    "typo3/cms-dashboard": "^10.4",
+    "rinyvt/sitepackage": "@dev",
+    "yoast-seo-for-typo3/yoast_seo": "dev-main as 9.0.0",
+    "georgringer/news": "^9.2",
+    "rinyvt/record-test": "@dev",
+    "doctrine/dbal": "2.10.4"
+  },
+  "scripts": {
+    "typo3-cms-scripts": [
+      "typo3cms install:generatepackagestates",
+      "typo3cms install:fixfolderstructure"
+    ],
+    "post-autoload-dump": [
+      "@typo3-cms-scripts"
+    ]
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  }
+}

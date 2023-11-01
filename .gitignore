@@ -1,14 +1,19 @@
 /extensions/*
 !/extensions/sitepackage
+!/extensions/record_test
 
-/public/v9/*
-!/public/v9/config
-!/public/v9/composer.json
+/php7/v10/*
+!/php7/v10/config
+!/php7/v10/composer.json
 
-/public/v10/*
-!/public/v10/config
-!/public/v10/composer.json
+/php7/v11/*
+!/php7/v11/config
+!/php7/v11/composer.json
 
-/public/v11/*
-!/public/v11/config
-!/public/v11/composer.json
+/php8/v11/*
+!/php8/v11/config
+!/php8/v11/composer.json
+
+/php8/v12/*
+!/php8/v12/config
+!/php8/v12/composer.json

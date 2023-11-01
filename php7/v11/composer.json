@@ -1,0 +1,38 @@
+{
+  "name": "rinyvt/yoast-dev-php7-11",
+  "description": "PHP7 CMS11 installation for Yoast Development",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../extensions/*"
+    }
+  ],
+  "require": {
+    "t3/cms": "^11.0",
+    "typo3/cms-reports": "^11.0",
+    "typo3/cms-dashboard": "^11.0",
+    "rinyvt/sitepackage": "@dev",
+    "yoast-seo-for-typo3/yoast_seo": "dev-master as 8.0.0",
+    "typo3/cms-composer-installers": "4.0.x@dev",
+    "rinyvt/record-test": "@dev",
+    "typo3/cms-linkvalidator": "^11.5",
+    "typo3/cms-scheduler": "^11.5",
+    "georgringer/news": "^9.4"
+  },
+  "scripts": {
+    "typo3-cms-scripts": [
+      "typo3cms install:fixfolderstructure"
+    ],
+    "post-autoload-dump": [
+      "@typo3-cms-scripts"
+    ]
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  }
+}
